@@ -80,3 +80,9 @@ delete_book_title = input('Enter book title you want to delete: ')
 library_obj.execute(delete_book, delete_book_title)
 print(f'{delete_book_title} has been successfully deleted from the database.')
 
+
+#closing connection with the database
+library_obj.close()
+library_database.close()
+
+print("Database connection closed.")
